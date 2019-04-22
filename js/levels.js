@@ -9,14 +9,16 @@
  */
 var Levels = new (function(){
   var self = this,
-      puzzles = { size5: [], size6: [], size7: [], size8: [], size9: [], size10: [] },
+      puzzles = { size5: [], size6: [], size7: [], size8: [], size9: [], size10: [], size11: [], size12: [] },
       qualityThreshold = {
         5: 60,
         6: 60,
         7: 60,
         8: 60,
 	9: 60,
-	10: 60
+	10: 60,
+	11: 60,
+	12: 60
       };
   
   // indicates the user completed a puzzle of given size
