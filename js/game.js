@@ -17,7 +17,7 @@ var Game = new (function() {
       showAppsIcon = window.isWebApp,
       startedTutorial = false,
       grid,
-      sizes = [5,6,7,8],
+      sizes = [5,6,7,8,9,10],
       lastSize = 0,
       currentPuzzle = null,
       checkTOH = 0,
@@ -407,7 +407,7 @@ var Game = new (function() {
       Tutorial.end();
       systemTilesLockToggleable = false;
       var ojoo = getOjoo() + '!';
-      $('#boardsize').html('<span>' + ojoo + '</span>');
+      $('#size').html('<span>' + ojoo + '</span>');
       grid.each(function() { this.system = true; });
       $('#bar [data-action]').hide();
       grid.solve();
