@@ -177,7 +177,7 @@ function Grid(size, height, id) {
         tile,
         maxAllowed = maxAllowed || width;
 
-    while (tryAgain && attempts++ < 99) {
+    while (tryAgain && attempts++ < 200) {
       tryAgain = false;
       var maxTiles = [];
 
@@ -401,7 +401,7 @@ function Grid(size, height, id) {
 
     Utils.shuffle(pool);
 
-    while (tryAgain && pool.length && attempts++ < 99) {
+    while (tryAgain && pool.length && attempts++ < 200) {
       tryAgain = false;
       save(1);
       
