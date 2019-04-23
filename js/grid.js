@@ -222,7 +222,7 @@ function Grid(size, height, id) {
         }
       }
     }
-    //console.log('Maxed in ' + attempts + ' attempts')
+    console.log('Maxed in ' + attempts + ' attempts')
     render();
   }
 
@@ -238,7 +238,7 @@ function Grid(size, height, id) {
       Utils.shuffle(pool);
     }
 
-    while (tryAgain && attempts++ < 99) {
+    while (tryAgain && attempts++ < 200) {
       //console.log('solving, attempt ', attempts);
       
       tryAgain = false;
@@ -347,7 +347,7 @@ function Grid(size, height, id) {
       }
     }
 
-    //console.log(attempts + ' attempts. ' + (tryAgain? 'Not done.' : 'Done.'));
+    console.log(attempts + ' attempts. ' + (tryAgain? 'Not done.' : 'Done.'));
     render();
 
     if (silent) 
